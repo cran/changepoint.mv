@@ -29,7 +29,7 @@ peltargs::peltargs(const std::vector<double>& _data,
 {
   data = _data;
   cost_func = _cost_func;
-  alpha = 2*log(data.size());
+  alpha = 2*log((double)data.size());
   m = 2;
   futureobj = std::shared_future<void>();
 }
@@ -48,7 +48,7 @@ peltargs::peltargs(const std::vector<double>& _data)
 {
   data = _data;
   cost_func = norm_mean;
-  alpha = 2*log(data.size());
+  alpha = 2*log((double)data.size());
   m = 2;
   futureobj = std::shared_future<void>();
 }
@@ -71,7 +71,7 @@ peltargs::peltargs(const std::vector<double>& _data,
 {
   data = _data;
   cost_func = _cost_func;
-  alpha = 2*log(data.size());
+  alpha = 2*log((double)data.size());
   m = _m;
   futureobj = std::shared_future<void>();
 }
@@ -92,7 +92,7 @@ peltargs::peltargs(const std::vector<double>& _data,
 {
   data = _data;
   cost_func = norm_mean;
-  alpha = 2*log(data.size());
+  alpha = 2*log((double)data.size());
   m = _m;
   futureobj = std::shared_future<void>();
 }
@@ -118,7 +118,7 @@ peltargs::peltargs(const std::vector<double>& _data,
 {
   data = _data;
   cost_func = _cost_func;
-  alpha = 2*log(data.size());
+  alpha = 2*log((double)data.size());
   m = 2;
   futureobj = _futureobj;
 }
@@ -139,7 +139,7 @@ peltargs::peltargs(const std::vector<double>& _data,
 {
   data = _data;
   cost_func = norm_mean;
-  alpha = 2*log(data.size());
+  alpha = 2*log((double)data.size());
   m = 2;
   futureobj = _futureobj;
 }
@@ -164,7 +164,7 @@ peltargs::peltargs(const std::vector<double>& _data,
 {
   data = _data;
   cost_func = _cost_func;
-  alpha = 2*log(data.size());
+  alpha = 2*log((double)data.size());
   m = _m;
   futureobj = _futureobj;
 }
@@ -187,7 +187,7 @@ peltargs::peltargs(const std::vector<double>& _data,
 {
   data = _data;
   cost_func = norm_mean;
-  alpha = 2*log(data.size());
+  alpha = 2*log((double)data.size());
   m = _m;
   futureobj = _futureobj;
 }
